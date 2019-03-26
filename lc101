@@ -1,0 +1,10 @@
+def get_initials(fullname):
+    ozzie_inits = get_initials("Ozzie Smith")
+    bonnie_inits = get_initials("bonnie blair")
+    george_inits = get_initials("george")
+    daniel_inits = get_initials("daniel day lewis")
+
+print("The initials of 'Ozzie Smith' are", ozzie_inits)
+print("The initials of 'bonnie blair' are", bonnie_inits)
+print("The initials of 'george' are", george_inits)
+print("The initials of 'daniel day lewis' are", daniel_inits)

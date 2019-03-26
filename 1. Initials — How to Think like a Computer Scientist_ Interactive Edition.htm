@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>1. Initials — How to Think like a Computer Scientist: Interactive Edition</title>
+    
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/basic.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codemirror.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/activecode.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codemirror.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/livecode.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/video.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/tabbedstuff.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/parsons.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/prettify.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/poll.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/dragndrop.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/pytutor.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/modal-basic.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/clickable.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/fitb.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/datafile.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codesplain.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery-ui-1.10.3.custom.min.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap-sphinx.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/user-highlights.css" type="text/css">
+    <link rel="stylesheet" href="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/runestone-custom-sphinx-bootstrap.css" type="text/css">
+    
+    <script src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/all.js" async="" crossorigin="anonymous"></script><script async="" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/analytics.js"></script><script id="facebook-jssdk" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/all(1).js"></script><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/runestonebase.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/underscore.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/doctools.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.highlight.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/bookfuncs.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codemirror.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/xml.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/css.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/htmlmixed.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/python.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/javascript.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/activecode.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/skulpt.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/clike.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timed_activecode.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/livecode.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/clike.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/shortanswer.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/tabbedstuff.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/prettify.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/underscore-min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/lis.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/parsons_setup.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/parsons.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/parsons-noconflict.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timedparsons.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/reveal.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/poll.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/dragndrop.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timeddnd.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/d3.v2.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/pytutor.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codelens.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/animationbase.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/clickable.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timedclickable.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/mchoice.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timedmc.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/fitb.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timedfitb.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/timed.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/skulpt.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/datafile.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/codesplain.js"></script>
+    <script src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/MathJax.js" id=""></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery-fix.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/waypoints.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/rangy-core.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/rangy-textrange.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/user-highlights.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="How to Think like a Computer Scientist: Interactive Edition" href="https://runestone.launchcode.org/runestone/static/thinkcspy/toc.html">
+    <link rel="next" title="2. Crypto" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Crypto.html">
+    <link rel="prev" title="13. Blog Design" href="https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/blog-design.html">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'https://runestone.launchcode.org' ? 'https://runestone.launchcode.org' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'thinkcspy';
+  eBookConfig.logLevel = 10;
+  eBookConfig.loginRequired = true;
+  eBookConfig.build_info = "3.5.1";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = true;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'thinkcspy';
+  eBookConfig.lang = 'python'
+</script>
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head><body role="document" style=""><div id="MathJax_Message" style="display: none;"></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./1. Initials — How to Think like a Computer Scientist_ Interactive Edition_files/vy-MhgbfL4v.html" style="border: none;"></iframe></div><div></div></div></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  
+  
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style="background: transparent url(&quot;../_static/img/lc_logo_small.png&quot;) no-repeat 0px 0px;" href="https://runestone.launchcode.org/runestone/static/thinkcspy/index.html">&nbsp; </a>
+        <a class="navbar-brand" href="https://runestone.launchcode.org/runestone/static/thinkcspy/index.html">Think Python</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+
+        <!-- scratch code dropdown -->
+        <li>
+          <a href="javascript:ACFactory.toggleScratchActivecode()">
+            <i class="glyphicon glyphicon-edit" style="opacity:0.9;"></i>
+          </a>
+        </li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="https://runestone.launchcode.org/runestone/static/thinkcspy/search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes">
+                <input type="hidden" name="area" value="default">
+              </form>
+            </li>
+            <li class="divider"></li>
+            <li><a href="https://runestone.launchcode.org/runestone/static/thinkcspy/genindex.html">Directory of Concepts</a></li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- navigation dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-align-justify" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><span class="loggedinuser">username: thomascandaceg@yahoo.com</span></li>
+            <li class="divider"></li>
+            <li><a href="https://runestone.launchcode.org/runestone/static/thinkcspy/toc.html">Table of Contents</a></li>
+            <li><a href="https://runestone.launchcode.org/runestone/static/thinkcspy/genindex.html">Index</a></li>
+            <li class="divider"></li>
+            <li><a href="https://runestone.launchcode.org/runestone/default/user/profile" id="profilelink">Edit Profile</a></li>
+            <li><a href="https://runestone.launchcode.org/runestone/default/user/change_password" id="passwordlink">Change Password</a></li>
+            <li><a href="https://runestone.launchcode.org/runestone/default/user/register" id="registerlink" style="display: none;">Register</a></li>
+            <li class="loginout"><a href="https://runestone.launchcode.org/runestone/default/user/logout">Log Out</a></li> <!-- correct link populated by addNavbarLoginLink() -->
+          </ul>
+        </li>
+        <!-- end navigation dropdown -->
+
+    </ul></div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section _7494561228" id="initials">
+<span id="index-0"></span><h1>1. Initials<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#initials" title="Permalink to this headline">¶</a></h1>
+<p class="_5912412">The main goal of this assignment is to remove you from the comfortable sandbox of the Active Code editors in this online book, and introduce you to the tools you need to start writing Python code locally on your own computer. By the end of the assignment, you will have written a small text-based program that tells the user the initials of his or her name.</p>
+<p class="_64109">The assignment is broken into 2 parts:</p>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#part-1-using-python-locally">Using Python Locally</a></dt>
+<dd><p class="first _678566">In part 1, we will guide you through all the setup work necessary for writing and executing Python code on your machine:</p>
+<ul class="last simple">
+<li>Learn how to use the <em>command line</em> interface on your computer</li>
+<li>Install a text editor</li>
+<li>Install Python</li>
+<li>Use your text editor to write Python code in a <code class="docutils literal"><span class="pre">.py</span></code> file</li>
+<li>Execute your Python file on the command line.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#part-2-initials">Initials</a></dt>
+<dd><p class="first last _3783642">In part 2, you will get down to business creating the program described above. This will be just like one of the typical Exercises at the end of the chapters in this book. The only difference is that you will be writing your code in a text editor and saving it locally on your computer.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="section _42337461" id="part-1-using-python-locally">
+<h2>Part 1: Using Python Locally<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#part-1-using-python-locally" title="Permalink to this headline">¶</a></h2>
+<p class="_3059295">In this section, you will learn how to interact with your computer using the command line, and then you will install everything you need to start writing and running code. Pick the operating system you use to go to the associated setup instructions page:</p>
+<p class="_39400"><a class="reference internal" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/LocalPythonWindows.html#windows-setup"><span class="std std-ref">Using Python Locally: Windows</span></a></p>
+<p class="_31750"><a class="reference internal" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/LocalPythonMac.html#mac-setup"><span class="std std-ref">Using Python Locally: macOS</span></a></p>
+<p class="_33384"><a class="reference internal" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/LocalPythonLinux.html#linux-setup"><span class="std std-ref">Using Python Locally: Linux</span></a></p>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _12547208">If you have already completed our <strong>Unit 0: Coding Prep</strong>, then you have already practiced working on the command line. In this case, it is up to you to decide whether you’d like to do the command line practice suggested in these sections for review, or – if you feel you’re proficient on the command line – to skip it.</p>
+</div>
+</div>
+<div class="section _5048393457" id="part-2-initials">
+<span id="initials-page"></span><h2>Part 2: Initials<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#part-2-initials" title="Permalink to this headline">¶</a></h2>
+<p class="_887132">Now that you have a little practice using the command-line, and have installed Python and a text editor, it is time to create your program.</p>
+<div class="section _135892872" id="setup">
+<h3>Setup<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#setup" title="Permalink to this headline">¶</a></h3>
+<p class="_3922930">First, you must create a new folder for the project, and a new file within the folder. And while we’re here, let’s make sure you set up your overall directory structure in a nice, organized way for future assignments.</p>
+<p class="_2366178">Open up a terminal (command line) window on your computer. After completing the Python setup above, you should already have a folder named <code class="docutils literal"><span class="pre">lc101/</span></code> in your home directory, where you will save all your assignments for this class.</p>
+<p class="_413254">But if you do <em>not</em> yet have such a class parent folder on your file system, then create one now:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir lc101
+</pre></div>
+</div>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _2102867">Remember that in the example above, you should not actually type the dollar sign <code class="docutils literal"><span class="pre">$</span></code>. We use that symbol just as a convention to indicate that the example takes place at the command-line prompt in a terminal window.</p>
+</div>
+<p class="_288747">Next, use the <code class="docutils literal"><span class="pre">cd</span></code> command to navigate so that you are inside that parent folder:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd lc101
+</pre></div>
+</div>
+<p class="_833456">Once you are inside your directory for the class, create a new sub-directory for this assignment called <code class="docutils literal"><span class="pre">initials/</span></code>, and then <code class="docutils literal"><span class="pre">cd</span></code> into it:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mkdir initials
+$ cd initials
+</pre></div>
+</div>
+<p class="_482363">In general, for the remainder of LC 101, you should follow this same pattern for every new assignment:</p>
+<ol class="arabic simple">
+<li>Navigate into the parent folder (e.g. <code class="docutils literal"><span class="pre">lc101/</span></code>).</li>
+<li>Create a new subfolder for the new assignment.</li>
+<li>Change directories into that new subfolder.</li>
+<li>Start coding!</li>
+</ol>
+<p class="_462997">For example, if you are starting an assignment called <em>Hungry Hungry Hippos</em>, then you should do this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd lc101
+$ mkdir hungry-hungry-hippos
+$ cd hungry-hungry-hippos
+</pre></div>
+</div>
+<p class="_154236">And your overall directory structure will look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">lc101</span><span class="o">/</span>
+    <span class="o">|</span>
+    <span class="o">+------</span> <span class="n">using</span><span class="o">-</span><span class="n">python</span><span class="o">-</span><span class="n">locally</span><span class="o">/</span>
+    <span class="o">|</span>           <span class="o">|</span>
+    <span class="o">|</span>           <span class="o">+-----</span> <span class="n">hello</span><span class="o">.</span><span class="n">py</span>
+    <span class="o">|</span>
+    <span class="o">+------</span> <span class="n">initials</span><span class="o">/</span>
+    <span class="o">|</span>           <span class="o">|</span>
+    <span class="o">|</span>           <span class="o">+-----</span> <span class="c1"># initials stuff</span>
+    <span class="o">|</span>
+    <span class="o">+------</span> <span class="n">hungry</span><span class="o">-</span><span class="n">hungry</span><span class="o">-</span><span class="n">hippos</span><span class="o">/</span>
+    <span class="o">|</span>           <span class="o">|</span>
+    <span class="o">|</span>           <span class="o">+-----</span> <span class="c1"># hippo stuff</span>
+    <span class="o">...</span> <span class="n">etc</span>
+</pre></div>
+</div>
+</div>
+<div class="section _160690971" id="the-initials-program">
+<h3>The Initials Program<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#the-initials-program" title="Permalink to this headline">¶</a></h3>
+<p class="_553805">Now you are finally ready to start coding! Inside your <code class="docutils literal"><span class="pre">initials/</span></code> folder, create a new file called <code class="docutils literal"><span class="pre">initials.py</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ touch initials.py
+</pre></div>
+</div>
+<p class="_596485">Open up that file in your text editor (e.g., Visual Studio Code), and copy and paste in the following starter code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_initials</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+    <span class="sd">""" Given a person's name, returns the person's initials (uppercase) """</span>
+    <span class="c1"># TODO your code here</span>
+</pre></div>
+</div>
+<p class="_3931976">Your function will receive one argument – <code class="docutils literal"><span class="pre">fullname</span></code>, a string representing someone’s name – and should return a string with that name’s capitalized initials.</p>
+<p class="_394441">Here are some examples of what your function should return for various <code class="docutils literal"><span class="pre">fullname</span></code> arguments:</p>
+<table border="0" class="table">
+<colgroup>
+<col width="51%">
+<col width="49%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><code class="docutils literal"><span class="pre">fullname</span></code></th>
+<th class="head">return value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Ozzie Smith</td>
+<td>OS</td>
+</tr>
+<tr class="row-odd"><td>Bonnie blair</td>
+<td>BB</td>
+</tr>
+<tr class="row-even"><td>George</td>
+<td>G</td>
+</tr>
+<tr class="row-odd"><td>Daniel Day Lewis</td>
+<td>DDL</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _1708110">Even if the name starts with a lowercase letter, you should always capitalize the initials. For example, notice how even if <code class="docutils literal"><span class="pre">fullname</span> <span class="pre">==</span> <span class="pre">"Bonnie</span> <span class="pre">blair"</span></code>, you should still return <code class="docutils literal"><span class="pre">"BB"</span></code> rather than <code class="docutils literal"><span class="pre">"Bb"</span></code></p>
+</div>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _4258935">You may assume that the name will contain only letters (uppercase and/or lowercase) plus single spaces between words. This means you don’t have to worry about Conan O’Brien, T.S. Eliot, or Cee-Lo Green.</p>
+</div>
+<p class="_396888">If you were to invoke your function and print the result, it would look something like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ozzie_inits</span> <span class="o">=</span> <span class="n">get_initials</span><span class="p">(</span><span class="s2">"Ozzie Smith"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">"The initials of 'Ozzie Smith' are"</span><span class="p">,</span> <span class="n">ozzie_inits</span><span class="p">)</span>
+<span class="c1"># =&gt; prints "The initials of 'Ozzie Smith' are OS"</span>
+</pre></div>
+</div>
+<p class="_74670">Okay, enough chit-chat. Go forth and code!</p>
+<div class="admonition hint">
+<p class="first admonition-title _673">Hint</p>
+<p class="last _1035479">You’ll need to collect the initials as you find them, and return them all together at the end. You may want to re-read about <a class="reference external" href="https://runestone.launchcode.org/runestone/static/thinkcspy/Strings/Loopingandcounting.html#the-accumulator-pattern-with-strings">The Accumulator Pattern</a>.</p>
+</div>
+</div>
+<div class="section _153317474" id="testing">
+<h3>Testing<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#testing" title="Permalink to this headline">¶</a></h3>
+<p class="_943561">When (you think) you are finished writing your <code class="docutils literal"><span class="pre">get_initials</span></code> function, you should test it to make sure it works. There are a few ways to do this:</p>
+<ol class="arabic simple">
+<li>You can import your script into a REPL (Python shell), and then feed various inputs into your function.</li>
+<li>Alternatively, you can just add some print statements (like the “Ozzie Smith” example above) to your <code class="docutils literal"><span class="pre">initials.py</span></code> script, and check to see that various inputs produce the correct results.</li>
+</ol>
+<p class="_34542">Technique 1 looks like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python
+Python 3.6.0 |Continuum Analytics, Inc.| (default, Dec 23 2016, 13:19:00)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; from initials import get_initials
+&gt;&gt;&gt; get_initials("Ozzie Smith")
+OS
+&gt;&gt;&gt; get_initials("bonnie blair")
+BB
+&gt;&gt;&gt; get_initials("Daniel Day Lewis")
+DDL
+... etc
+quit()
+</pre></div>
+</div>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _344425">You must run <code class="docutils literal"><span class="pre">python</span></code> from your <cite>lc101/initials</cite> directory for the <code class="docutils literal"><span class="pre">import</span></code> command to work.</p>
+</div>
+<p class="_3376930">That looks complicated but its actually very easy. Try typing <code class="docutils literal"><span class="pre">python</span></code> into your terminal and you’ll see. Technique 1 is definitely recommended, because writing and changing bunch of print statements starts to get annoying very quickly.</p>
+<p class="_1204715">But if you prefer Technique 2, here’s how that works: Simply add print statements to your file, and then run your script on the command-line:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python caesar.py
+The initials of 'Ozzie Smith' are OS
+The initials of 'bonnie blair' are BB
+The initials of 'Daniel Day Lewis' are DDL
+... etc
+</pre></div>
+</div>
+<p class="_410218">After running your script, just test by hand that the output matches what you expected to see.</p>
+<p class="_724249">Either way, whether using the REPL or print statements, make sure to test your function against a healthy variety of inputs.</p>
+</div>
+<div class="section _36653560" id="make-it-interactive">
+<h3>Make It Interactive<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#make-it-interactive" title="Permalink to this headline">¶</a></h3>
+<p class="_3311844">Let’s now turn this into an interactive program that a user can run from the terminal. All you have to do is add an <code class="docutils literal"><span class="pre">input</span></code> statement to ask the user for his/her name, and then a <code class="docutils literal"><span class="pre">print</span></code> statement to report the results back to him/her. Your program should work like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python initials.py
+What is your full name?
+Ozzie Smith
+OS
+</pre></div>
+</div>
+<p class="_76399">Just to be clear about the example above:</p>
+<ul class="simple">
+<li>The user typed the first line, causing the program to run.</li>
+<li>Then, the program printed the second line asking for their name.</li>
+<li>Then the user typed the third line (“Ozzie Smith”).</li>
+<li>Finally, the program printed the initials (“OS”).</li>
+</ul>
+</div>
+<div class="section _685866443" id="make-it-importable">
+<h3>Make it Importable<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#make-it-importable" title="Permalink to this headline">¶</a></h3>
+<p class="_563042">Almost done! There is one more thing you must do before submitting. Presumably, your file now looks like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_initials</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+    <span class="c1"># some code here</span>
+
+<span class="c1"># some more code here (input and print statements)</span>
+</pre></div>
+</div>
+<p class="_5470199">As you know, the second block of code contains the lines that actually get executed when the user runs the script. The code <em>inside</em> the <code class="docutils literal"><span class="pre">get_initials</span></code> function, by contrast, only executes thanks to the fact that it <em>gets invoked</em> by one of the statements from that second block of code that sits all the way on the left, at the global level of scope.</p>
+<p class="_2529507">Generally speaking, however, it is actually bad practice to have “loose” statements floating around at that left-most, unindented scope of a script. There are two reasons why:</p>
+<p class="_4460258"><strong>Issue 1: Organization.</strong> As your script grows larger, it can become hard to keep track of all those loose statements, especially if you don’t keep them all together in one block. At that point, you will start to loose track of exactly what happens when the script is run.</p>
+<p class="_18225356"><strong>Issue 2: Importing.</strong> When some other file tries to <code class="docutils literal"><span class="pre">import</span></code> this file, all the loose statements will be executed, which is probably not what the other file wanted. For example, say you are writing another script, and you once again encounter the need to parse initials from people’s names. Instead of re-writing the <code class="docutils literal"><span class="pre">get_initials</span></code> function, this is a perfect chance to reuse the code you have already written by importing your <code class="docutils literal"><span class="pre">initials.py</span></code> file. Sounds great! But unfortunately, the moment you import the file, those <code class="docutils literal"><span class="pre">input</span></code> and <code class="docutils literal"><span class="pre">print</span></code> statements will blurt out and start talking to the user.</p>
+<p class="_452890">The solution to Issue 1 is to move your <code class="docutils literal"><span class="pre">input</span></code> and <code class="docutils literal"><span class="pre">print</span></code> statements into a <code class="docutils literal"><span class="pre">main</span></code> function, like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_initials</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+    <span class="c1"># some code here</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># some more code here (input and print statements)</span>
+
+<span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="_4460735">In the new version, notice that we have placed the second block of code inside a function called <code class="docutils literal"><span class="pre">main</span></code>. This is the generally accepted pattern: Move all loose statements into a <code class="docutils literal"><span class="pre">main</span></code> function so that you have them together in one place. Finally, the <em>only</em> loose statement left is the invocation of <code class="docutils literal"><span class="pre">main</span></code> at the end.</p>
+<p class="_749211">Issue 2 can be solved by adding one more line of code that places the <code class="docutils literal"><span class="pre">main()</span></code> invocation inside a (strange-looking) <code class="docutils literal"><span class="pre">if</span></code> statement:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_initials</span><span class="p">(</span><span class="n">fullname</span><span class="p">):</span>
+    <span class="c1"># some code here</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># some more code here (input and print statements)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="_50798">In effect, that conditional says:</p>
+<blockquote>
+<div>“If this is actually the main program that is being run, then go ahead and execute the <code class="docutils literal"><span class="pre">main</span></code> function. Otherwise, if this file is being imported, or something else is going on, then stay quiet and do nothing.”</div></blockquote>
+<div class="admonition note alert alert-info">
+<p class="first admonition-title _646">Note</p>
+<p class="last _567651">If you are curious about the <code class="docutils literal"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code> conditional, you can check out this <a class="reference external" href="http://stackoverflow.com/questions/419163/what-does-if-name-main-do#419185">Stack Overflow post</a>.</p>
+</div>
+<p class="_10435928">Now we are good to go! The program works normally when run directly from the command-line, but if some other file imports it, the <code class="docutils literal"><span class="pre">main</span></code> function will not execute. All of this should be a review, since we have been using this structure throughout the book after learning about <code class="docutils literal"><span class="pre">__main__</span></code> in the Functions chapter. But it is especially important to follow this organization now that you are using Python locally and submitting entire files to Vocareum (more about this below).</p>
+<div class="admonition warning alert alert-warning">
+<p class="first admonition-title _2243">Warning</p>
+<p class="last _6986753">Before you submit your work, it is important that you transform your <code class="docutils literal"><span class="pre">initials.py</span></code> code to reflect the example above. The grading script is going to <code class="docutils literal"><span class="pre">import</span></code> your file, and if you have a loose <code class="docutils literal"><span class="pre">input</span></code> statement at the global scope level, that statement is going to execute and wait forever for input from a non-existent user, and you will find yourself waiting a very long time for your grade.</p>
+</div>
+</div>
+</div>
+<div class="section _6439464" id="how-to-submit">
+<h2>How to Submit<a class="headerlink" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Initials.html#how-to-submit" title="Permalink to this headline">¶</a></h2>
+<p class="_2803415">The submission process for this assignment is slightly <strong>different</strong> from that of your previous assignments. You will not be given a pre-made starter file into which you can paste your code. Instead, you must upload your own file into the workspace.</p>
+<ol class="arabic simple">
+<li>Click the <em>Upload</em> button on the top-left of the Vocareum window, and select your <code class="docutils literal"><span class="pre">initials.py</span></code> file.</li>
+<li>Click <em>Submit</em>!</li>
+</ol>
+</div>
+</div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title="" data-toggle="tooltip" data-original-title="Previous Section - 13. Blog Design">
+    <a href="https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/blog-design.html">
+      <i class="prevNav glyphicon glyphicon-chevron-left"></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft" href="https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/blog-design.html"></a>
+
+  
+  <li id="relations-next" class="navLink" title="" data-toggle="tooltip" data-original-title="Next Section - 2. Crypto">
+    <a href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Crypto.html">
+      <i id="relationsNextIcon" class="nextNav glyphicon glyphicon-chevron-right"></i>
+    </a>
+  </li>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="https://runestone.launchcode.org/runestone/static/thinkcspy/ProblemSets/Crypto.html"></a>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+  
+<div style="text-align:center"><button class="btn btn-lg buttonAskCompletion" id="completionButton">Mark as completed</button></div></div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78748330-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+  
+<div id="ac_modal_thinkcspyProblemSetsInitials" class="modal fade">  <div class="modal-dialog scratch-ac-modal">    <div class="modal-content">      <div class="modal-header">        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>        <h4 class="modal-title">Scratch ActiveCode</h4>      </div>       <div class="modal-body">      <div class="ac_section" id="thinkcspyProblemSetsInitials" lang="python"><div id="thinkcspyproblemsetsinitials"></div><div class="ac_code_div ac_editor_container"><div class="ac_actions"><button class="btn btn-success">Run</button><button class="ac_opt btn btn-default" style="margin-left: 10px;">Save</button><button class="ac_opt btn btn-default" style="margin-left: 10px;">Load</button></div><div class="CodeMirror cm-s-default"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px;"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure">AخA</div><div class="CodeMirror-measure"><pre><span style="padding-right: 0.1px;">      </span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code"></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 0px;"></div></div></div></div></div><div class="ac_output col-md-12"><div class="ac_output_label">Output</div><pre></pre><div id="thinkcspyProblemSetsInitials_graphics" class="ac-canvas"></div></div><div style="clear: both;"></div><div class="code-lens" style="display: none;"></div><div class="col-md-12" style="display: none;"></div><div style="clear: both;"></div></div>      </div>    </div>  </div></div></body></html>
